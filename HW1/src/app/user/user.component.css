@@ -1,0 +1,8 @@
+ul > li:hover {
+  cursor: pointer;
+  color: rgba(255,0,0,.4);
+}
+
+ul > li:active{
+  color: blue;
+}
