@@ -24,6 +24,7 @@ export class AppComponent {
   currentWeather$!: Observable<CurrentWeather[]>;
 
   fiveDaysWeather$!: Observable<ListWeatherInfo[]>;
+  //fiveDaysWeather$!: Observable<FiveDaysWeather[]>;
 
   constructor(private readonly jsonPlaceholderService: JsonPlaceholderService) {
   }
