@@ -1,0 +1,12 @@
+<div id="divWeatherMain">
+<!--  <h3 style="padding: 5px" *ngFor="let item of fiveDaysWeather.list">{{ item }}</h3>-->
+  <h3 style="padding: 5px">{{ fiveDaysWeather.dt_txt }}</h3>
+  <div class="weatherWidgetRow cloudDiv">
+    <i class="fas fa-cloud fa-3x cloud"></i>
+  </div>
+  <div class="weatherWidgetRow" style="font-size: 32px;margin-top: 5px;">{{fiveDaysWeather.main.temp}}°</div>
+  <div class="weatherWidgetRow" style="font-size: 12px;margin-top: 15px">{{fiveDaysWeather.main.temp_min}}° / {{fiveDaysWeather.main.temp_max}}°</div>
+  <div class="weatherWidgetRow" style="font-size: 12px;margin-top: 15px ">Feels Like: {{fiveDaysWeather.main.feels_like}}°</div>
+<!--  <div class="weatherWidgetRow" style="font-size: 25px;margin-top: 10px;">{{weather}}</div>-->
+  <div class="weatherWidgetRow" style="font-size: 12px;margin-top: 15px">Humidity: {{fiveDaysWeather.main.humidity}}%</div>
+</div>

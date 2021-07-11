@@ -1,0 +1,22 @@
+<!--<div class="news">-->
+<!--  <app-current-weather *ngFor="let currentWeather of currentWeather$ | async " [currentWeather]="currentWeather"></app-current-weather>-->
+<!--</div>-->
+
+<div class="main-control">
+  <div style="margin: 15px">
+    <button mat-raised-button color="primary" (click)="onBtnCurWeatherClick()" style="margin: 5px">{{ btnCurrentWeather }}</button>
+    <button mat-raised-button color="primary" (click)="onBtnWeatherByHoursClick()">{{ btnFiveDaysWeatherByHours }}</button>
+  </div>
+  <div class="weather">
+    <div class="current-weather" *ngIf="curWeather">
+      <app-current-weather
+        *ngFor="let currentWeather of currentWeather$ | async " [currentWeather]="currentWeather"></app-current-weather>
+    </div>
+    <div class="hourly-weather" *ngIf="weatherByHours">
+      <h1>Hourly Weather</h1>
+      <app-five-days-weather style="display: inline-block; margin-right: 60px"
+                             *ngFor="let fiveDaysWeather of fiveDaysWeather$ | async "
+                             [fiveDaysWeather]="fiveDaysWeather"></app-five-days-weather>
+    </div>
+  </div>
+</div>
