@@ -16,4 +16,8 @@ export class CurrentWeatherDataComponent {
   }
 
 
+  addTMP(){
+
+  }
+
 }

@@ -23,6 +23,10 @@ export class JsonPlaceholderService {
   //     .join(''));
   // }
 
+  // getFiveDaysAllWeatherByCity(city:string) {
+  //   return this.httpClient.get([this.FiveDaysWeatherURL + city + '&units=metric' + this.APIKey]
+  //     .join(''));
+  // }
 
   getFiveDaysAllWeatherByCity(city:string) {
     return this.httpClient.get<any>([this.FiveDaysWeatherURL + city + '&units=metric' + this.APIKey]

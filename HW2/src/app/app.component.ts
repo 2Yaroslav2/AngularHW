@@ -35,6 +35,7 @@ export class AppComponent {
 
     this.fiveDaysWeather$ = this.jsonPlaceholderService.getFiveDaysAllWeatherByCity("Kiev");
 
+    //this.fiveDaysWeather$.subscribe(tmp=>console.log(tmp));
   }
 
   onBtnCurWeatherClick() {

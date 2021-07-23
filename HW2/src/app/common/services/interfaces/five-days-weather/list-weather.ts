@@ -5,7 +5,7 @@ import {Wind} from "@app-common/services/interfaces/for-everything-weather/wind.
 
 export interface ListWeatherInfo {
   main: Main,
-  weather: Weather[],
+  weather: Weather,
   wind: Wind,
   dt_txt: string
 }

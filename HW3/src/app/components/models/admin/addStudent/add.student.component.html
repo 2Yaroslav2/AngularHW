@@ -1,0 +1,59 @@
+<h1 style="color: #d4d4d4">Add</h1>
+
+<!--<mat-form-field class="example-form-field" appearance="fill">-->
+<!--  <mat-label>Clearable input</mat-label>-->
+<!--  <input matInput type="text" [(ngModel)]="value">-->
+<!--  <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">-->
+<!--    <mat-icon>close</mat-icon>-->
+<!--  </button>-->
+<!--</mat-form-field>-->
+
+<!--<div style="color: #d4d4d4;">-->
+<!--  <p>Name</p>-->
+<!--  <input name="inputName" type="text">-->
+<!--  <p>Subject</p>-->
+<!--  <input name="inputSubject" type="text">-->
+<!--  <p>Mark</p>-->
+<!--  <input name="inputMark" type="text">-->
+<!--  <p>Date</p>-->
+<!--  <input name="inputDate" type="date">-->
+<!--</div>-->
+<!--<button style="margin: 10px; width: 100px; height: 40px" >Save</button>-->
+
+<!--<div>-->
+<!--  <form [formGroup]="form">-->
+<!--&lt;!&ndash;      <mat-form-field hintLabel="Max 100 characters" appearance="fill">&ndash;&gt;-->
+<!--&lt;!&ndash;        <mat-label>Name</mat-label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input matInput formControlName="name" placeholder="Enter student name...">&ndash;&gt;-->
+<!--&lt;!&ndash;      </mat-form-field>&ndash;&gt;-->
+
+<!--    <input matInput formControlName="name" placeholder="Enter student name..." >-->
+
+<!--&lt;!&ndash;      <mat-form-field hintLabel="Max 100 characters" appearance="fill">&ndash;&gt;-->
+<!--&lt;!&ndash;        <mat-label>Subject</mat-label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input matInput formControlName="subject" placeholder="Enter subject...">&ndash;&gt;-->
+<!--&lt;!&ndash;      </mat-form-field>&ndash;&gt;-->
+
+<!--    <input matInput formControlName="subject" placeholder="Enter subject...">-->
+
+<!--&lt;!&ndash;      <mat-form-field hintLabel="Max 100" appearance="fill">&ndash;&gt;-->
+<!--&lt;!&ndash;        <mat-label>Mark</mat-label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input matInput formControlName="mark" placeholder="Enter mark...">&ndash;&gt;-->
+<!--&lt;!&ndash;      </mat-form-field>&ndash;&gt;-->
+
+<!--    <input matInput formControlName="mark" placeholder="Enter mark...">-->
+
+<!--&lt;!&ndash;      <mat-form-field hintLabel="Max 100" appearance="fill">&ndash;&gt;-->
+<!--&lt;!&ndash;        <mat-label>Mark</mat-label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input matInput formControlName="date" type="date">&ndash;&gt;-->
+<!--&lt;!&ndash;      </mat-form-field>&ndash;&gt;-->
+
+<!--    <input matInput formControlName="date" type="date">-->
+
+<!--    <button [disabled]="!form.valid" mat-raised-button color="primary" (click)="btnClickSaveEvent()">Save</button>-->
+<!--  </form>-->
+<!--</div>-->
+
+<div *ngIf="saveSuccessful">
+  <h1>Successful</h1>
+</div>

@@ -6,7 +6,7 @@ import {Sys} from "@app-common/services/interfaces/current-weather/sys.interface
 
 
 export interface CurrentWeather {
-  weather: Weather[],
+  weather: Weather,
   main: Main,
   wind: Wind,
   rain: string,
