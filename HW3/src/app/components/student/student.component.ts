@@ -29,26 +29,9 @@ export class StudentComponent {
   displayedColumns: string[] = ['position', 'name','subject', 'mark' ,'date'];
   dataSource = [...ELEMENT_DATA];
 
-  // addStudentView: boolean = false;
-  // editStudentView : boolean = false;
   tableStudentView : boolean = true;
 
-  studentForEdit! : StudentInterfaces;
-
-  index : number = -1;
-
   @ViewChild(MatTable) table!: MatTable<StudentInterfaces>;
-
-  // addDataClick() {
-  //   if (this.addStudentView){
-  //     this.addStudentView = false;
-  //   }
-  //   else {
-  //     this.addStudentView = true;
-  //     this.editStudentView = false;
-  //     this.tableStudentView = false;
-  //   }
-  // }
 
   viewTableClick(){
     if (this.tableStudentView){
@@ -56,68 +39,12 @@ export class StudentComponent {
     }
     else {
       this.tableStudentView = true;
-      // this.addStudentView = false;
-      // this.editStudentView = false;
     }
   }
 
-  // editStudentClick(){
-  //   if (this.editStudentView){
-  //     this.editStudentView = false;
-  //   }
-  //   else {
-  //     this.editStudentView = true;
-  //     this.addStudentView = false;
-  //     this.tableStudentView = false;
-  //   }
-  // }
 
-  removeDataClick() {
-    if (this.dataSource.length != -1){
-      this.dataSource.pop();
-      this.table.renderRows();
-    }
-  }
 
-  setNewStudent(student: StudentInterfaces){
 
-    student.position = this.dataSource.length + 1
-    this.dataSource.push(student);
-    this.table.renderRows();
-  }
 
-  onEditBtnClick(student: StudentInterfaces){
 
-    // console.log('in student component date', student.date);
-    // console.log('in student component  mark', student.mark);
-    console.log('in student component  name', student.name);
-    console.log('in student component  position', student.position);
-    // console.log('in student component  subject', student.subject);
-
-    console.log('in student.position -1 component  name', this.dataSource[student.position -1].name);
-
-    student.position = this.dataSource.length + 1
-
-    this.dataSource[student.position -1].name = student.name;
-
-    console.log('in "student.position -1" component  name', this.dataSource[student.position -1].name);
-
-    // this.dataSource[student.position -1].subject = student.subject;
-    // this.dataSource[student.position -1].mark = student.mark;
-    // this.dataSource[student.position -1].date = student.date;
-
-    this.table.renderRows();
-  }
-
-  onSelectStudentClick(idx: number){
-    //this.btnRemoveClickEvent.emit(idx);
-    this.index = idx;
-    //console.log("index: ", idx);
-    if(idx != -1){
-      // this.tableStudentView = false;
-      // this.editStudentView = true;
-
-      this.studentForEdit = this.dataSource[idx];
-    }
-  }
 }

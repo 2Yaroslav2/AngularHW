@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import {AdminComponent} from "./admin.component";
 import {AddStudentComponent} from "./addStudent/add.student.component";
 import {EditStudentComponent} from "./editStudent/edit.student.component";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -10,9 +14,11 @@ import {EditStudentComponent} from "./editStudent/edit.student.component";
     EditStudentComponent,
   ],
   imports: [
-
+    BrowserModule,
+    ReactiveFormsModule,
+    MatTableModule,
+    MatButtonModule,
   ],
-  // exports: [AdminComponent],
   providers: [],
 })
 export class AdminModule { }

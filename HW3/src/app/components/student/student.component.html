@@ -1,39 +1,19 @@
 <div class="demo-button-container">
-<!--  <button mat-raised-button (click)="addDataClick()" class="demo-button" >-->
-<!--    <a>Add student</a>-->
 
-<!--  </button>-->
-<!--  <button mat-raised-button (click)="editStudentClick()" class="demo-button">-->
-<!--    Edit student-->
-<!--  </button>-->
   <button mat-raised-button (click)="viewTableClick()" class="demo-button">
     View table student
   </button>
 
-<!--  <button-->
-<!--    mat-raised-button-->
-<!--    [disabled]="!dataSource.length"-->
-<!--    (click)="removeDataClick()"-->
-<!--    class="demo-button">-->
-<!--    Remove student-->
-<!--  </button>-->
-
 </div>
 
 <div>
-<!-- *ngIf="addStudentView" -->
-<!--  <div *ngIf="addStudentView">-->
-<!--    <app-add-student (newStudentEvent)="onAddBtnClick($event)"></app-add-student>-->
-<!--  </div>-->
-
-<!-- *ngIf="tableStudentView" -->
+<
   <div *ngIf="tableStudentView">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table" >
       <!-- Position Column -->
       <ng-container matColumnDef="position">
         <th mat-header-cell *matHeaderCellDef>No.</th>
         <td mat-cell
-            (click)="onSelectStudentClick(idx)"
             *matCellDef="let element; let idx = index;">{{element.position}}</td>
       </ng-container>
 
@@ -41,14 +21,12 @@
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef>Name</th>
         <td mat-cell
-            (click)="onSelectStudentClick(idx)"
             *matCellDef="let element; let idx = index;">{{element.name}}</td>
       </ng-container>
 
       <ng-container matColumnDef="subject">
         <th mat-header-cell *matHeaderCellDef>Subject</th>
         <td mat-cell
-            (click)="onSelectStudentClick(idx)"
             *matCellDef="let element; let idx = index;">{{element.subject}}</td>
       </ng-container>
 
@@ -56,7 +34,6 @@
       <ng-container matColumnDef="mark">
         <th mat-header-cell *matHeaderCellDef>Mark</th>
         <td mat-cell
-            (click)="onSelectStudentClick(idx)"
             *matCellDef="let element; let idx = index;">{{element.mark}}</td>
       </ng-container>
 
@@ -64,7 +41,6 @@
       <ng-container matColumnDef="date">
         <th mat-header-cell *matHeaderCellDef>Date</th>
         <td mat-cell
-            (click)="onSelectStudentClick(idx)"
             *matCellDef="let element; let idx = index;">{{element.date}}</td>
       </ng-container>
 
@@ -73,8 +49,4 @@
     </table>
   </div>
 
-<!-- *ngIf="editStudentView" -->
-<!--  <div *ngIf="editStudentView">-->
-<!--    <app-edit-student [oldStudent]="studentForEdit" (editedStudentEvent)="onEditBtnClick($event)"></app-edit-student>-->
-<!--  </div>-->
 </div>

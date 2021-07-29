@@ -1,0 +1,14 @@
+.demo-table {
+  width: 100%;
+  /*background-color: #424242;*/
+  color: #d4d4d4;
+}
+
+.demo-button-container {
+  padding-bottom: 16px;
+}
+
+.demo-button + .demo-button {
+  margin-left: 8px;
+}
+

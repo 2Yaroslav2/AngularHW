@@ -50,8 +50,6 @@ import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {ReactiveFormsModule} from "@angular/forms";
 import {StudentComponent} from "./components/student/student.component";
-import {AddStudentComponent} from "./components/models/admin/addStudent/add.student.component";
-import {EditStudentComponent} from "./components/models/admin/editStudent/edit.student.component";
 import {HomeComponent} from "./components/home/home.component";
 import {AdminService} from "./shared/services/admin.service";
 import {AdminGuard} from "./shared/guards/admin.guard";
@@ -65,8 +63,6 @@ import {AdminModule} from "./components/models/admin/admin.module";
     AppComponent,
     StudentComponent,
     HomeComponent,
-
-
   ],
   imports: [
     BrowserModule,
