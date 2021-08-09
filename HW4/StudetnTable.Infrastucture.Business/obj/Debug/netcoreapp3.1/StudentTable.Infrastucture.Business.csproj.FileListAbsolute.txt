@@ -1,0 +1,12 @@
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\bin\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.deps.json
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\bin\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\bin\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\bin\Debug\netcoreapp3.1\StudentTable.Domain.Core.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\bin\Debug\netcoreapp3.1\StudentTable.Domain.Core.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.csproj.AssemblyReference.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.AssemblyInfoInputs.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.AssemblyInfo.cs
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.csproj.CoreCompileInputs.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.csproj.CopyComplete
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.pdb

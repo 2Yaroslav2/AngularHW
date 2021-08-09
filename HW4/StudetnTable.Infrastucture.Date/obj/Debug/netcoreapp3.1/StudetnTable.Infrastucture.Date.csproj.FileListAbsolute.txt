@@ -1,0 +1,8 @@
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\bin\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.deps.json
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\bin\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\bin\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.AssemblyInfoInputs.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.AssemblyInfo.cs
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.csproj.CoreCompileInputs.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudetnTable.Infrastucture.Date.pdb

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AuthService} from "../auth/auth.service";
 
 @Component({
   selector: 'app-nav-menu',
@@ -8,11 +9,21 @@ import { Component } from '@angular/core';
 export class NavMenuComponent {
   isExpanded = false;
 
+  constructor(public authService: AuthService) {}
+
   collapse() {
     this.isExpanded = false;
   }
 
   toggle() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  onLogoutClick(ev) {
+    ev.stopPropagation();
+    // console.log('logout click');
+    this.authService.logout().subscribe();
+
+    return false;
   }
 }

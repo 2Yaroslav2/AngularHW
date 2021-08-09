@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, Inject } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-counter-component',
@@ -10,4 +12,18 @@ export class CounterComponent {
   public incrementCounter() {
     this.currentCount++;
   }
+
+  //public users$: Observable<User[]>;
+
+  //constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+  //  this.users$ = http.get<User[]>(baseUrl + 'user');
+  //}
+
+
 }
+
+//interface User {
+//  login: string;
+//  passwrod: string;
+//}
+

@@ -11,8 +11,7 @@
         data-target=".navbar-collapse"
         aria-label="Toggle navigation"
         [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
+        (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div
@@ -21,22 +20,37 @@
       >
         <ul class="navbar-nav flex-grow">
           <li
+            *ngIf="authService.isUserAuth$ | async"
             class="nav-item"
             [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
+            [routerLinkActiveOptions]="{ exact: true }">
             <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
           </li>
+
           <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/counter']"
-              >Counter</a
-            >
+            <a class="nav-link text-dark" [routerLink]="['/counter']">Counter</a>
           </li>
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/fetch-data']"
-              >Fetch data</a
-            >
+
+          <li
+            *ngIf="authService.isUserAuth$ | async"
+            class="nav-item"
+            [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/fetch-data']">Fetch data</a>
           </li>
+
+          <li
+            *ngIf="!(authService.isUserAuth$ | async)"
+            class="nav-item"
+            [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/login']">Login</a>
+          </li>
+
+          <li
+            *ngIf="authService.isUserAuth$ | async"
+            class="nav-item">
+            <a class="nav-link text-dark" (click)="onLogoutClick($event)" href="#">Logout</a>
+          </li>
+
         </ul>
       </div>
     </div>

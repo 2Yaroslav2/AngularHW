@@ -1,10 +1,12 @@
-<h1>I`am a child component!</h1>
-
-
-
 <ul>
-  <li (click)="onSelectUserClick(idx)"
-    *ngFor="let user of users; let idx = index">{{user}}</li>
+  <mat-selection-list>
+    <mat-list-option
+      (click)="onSelectClick(idx)"
+      *ngFor="let user of users let idx = index">
+      {{user}}
+    </mat-list-option>
+  </mat-selection-list>
 </ul>
 
-<button (click)="onBtnRemoveUserClick()">Delete</button>
+<button mat-raised-button color="primary"
+        (click)="onRemoveClick()">Remove</button>

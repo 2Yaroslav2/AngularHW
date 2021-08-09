@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+NueIqFooGYS9mKMi8R3QaPnM+ldjQrDFjZ26f8I5k+ai4aJj1Jp4z/tRswn6+rNPzb1cWadajFRbanf5DXh8Q==",
+  "success": true,
+  "projectFilePath": "D:\\ProgrammingHW\\Projects Angular\\HW4\\StudetnTable.Infrastucture.Business\\StudentTable.Infrastucture.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\msi\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\msi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\msi\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

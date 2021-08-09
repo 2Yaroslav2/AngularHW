@@ -1,0 +1,9 @@
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\bin\Debug\netcoreapp3.1\StudentTable.Domain.Core.deps.json
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\bin\Debug\netcoreapp3.1\StudentTable.Domain.Core.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\bin\Debug\netcoreapp3.1\StudentTable.Domain.Core.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\obj\Debug\netcoreapp3.1\StudentTable.Domain.Core.AssemblyInfoInputs.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\obj\Debug\netcoreapp3.1\StudentTable.Domain.Core.AssemblyInfo.cs
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\obj\Debug\netcoreapp3.1\StudentTable.Domain.Core.csproj.CoreCompileInputs.cache
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\obj\Debug\netcoreapp3.1\StudentTable.Domain.Core.dll
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\obj\Debug\netcoreapp3.1\StudentTable.Domain.Core.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Domain.Core\obj\Debug\netcoreapp3.1\StudentTable.Domain.Core.csproj.AssemblyReference.cache

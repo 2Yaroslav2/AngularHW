@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using StudentTable.Services.Interfaces.Interfaces;
+using StudetnTable.Infrastucture.Business.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace HW4.Controllers
 {
@@ -11,6 +13,8 @@ namespace HW4.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        IUserServices userServices;
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
@@ -18,12 +22,31 @@ namespace HW4.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IUserServices userServices)
         {
             _logger = logger;
+
+            //this.userServices = userServices;
+            //this.userServices.CreateUser(new UserDto
+            //{
+            //    Login = "admin@gmail.com",
+            //    Password = "12345",
+            //    Role = StudetnTable.Domain.Core.Base.Role.AuthRole.Admin
+            //});
+
+            //this.userServices.CreateUser(new UserDto
+            //{
+            //    Login = "qwerty@gmail.com",
+            //    Password = "12345",
+            //    Role = StudetnTable.Domain.Core.Base.Role.AuthRole.User
+            //});
+
+            //var tmp = this.userServices.GetAllUsers();
+            ;
         }
 
         [HttpGet]
+        [Authorize]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
