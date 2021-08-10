@@ -1,4 +1,5 @@
-﻿using StudetnTable.Infrastucture.Date.Database;
+﻿using StudentTable.Infrastucture.Date.Database;
+using StudentTable.Infrastucture.Date.Repository.Interface;
 using System;
 
 namespace StudentTable.Infrastucture.Date.Repository
@@ -7,19 +8,19 @@ namespace StudentTable.Infrastucture.Date.Repository
     {
         private StudentTableContext context;
         private UserRepository userRepository;
-
-        private static UnitOfWork instance;
-
+        private JournalRepository journalRepository;
+    
         public UnitOfWork(StudentTableContext context)
         {
             this.context = context;
         }
 
-        //public static EfUnitOfWork Instance
-        //    => instance ?? (instance = new EfUnitOfWork());
 
         public UserRepository UserRepository
             => userRepository ?? (userRepository = new UserRepository(context));
+
+        public JournalRepository JournalRepository 
+            => journalRepository ?? (journalRepository = new JournalRepository(context));
 
         private bool disposed = false;
         public virtual void Dispose(bool disposing)

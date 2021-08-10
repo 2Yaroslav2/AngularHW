@@ -1,19 +1,18 @@
 using HW4.Models.Utils;
-using HW4.Models.View;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using StudentTable.Infrastucture.Date.Database;
 using StudentTable.Infrastucture.Date.Repository;
+using StudentTable.Infrastucture.Date.Repository.Interface;
 using StudentTable.Services.Interfaces.Interfaces;
 using StudentTable.Services.Interfaces.Services;
-using StudetnTable.Infrastucture.Date.Database;
 
 namespace HW4
 {
@@ -36,6 +35,7 @@ namespace HW4
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IUserServices, UserService>();
+            services.AddTransient<IJournalServices, JournalService>();
             //---
 
             services.AddControllersWithViews();
@@ -45,6 +45,7 @@ namespace HW4
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            // Authorization
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options =>
                     {

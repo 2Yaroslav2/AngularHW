@@ -1,4 +1,4 @@
-﻿using static StudetnTable.Domain.Core.Base.Role;
+﻿using static StudentTable.Domain.Core.Base.Role;
 
 namespace HW4.Models.View.Auth
 {

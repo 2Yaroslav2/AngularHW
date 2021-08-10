@@ -1,15 +1,15 @@
 ﻿using StudentTable.Infrastucture.Date.Repository;
 using StudentTable.Services.Interfaces.Interfaces;
-using StudetnTable.Domain.Core.Entities;
-using StudetnTable.Infrastucture.Business.AutoMapper;
-using StudetnTable.Infrastucture.Business.DTO;
+using StudentTable.Domain.Core.Entities;
+using StudentTable.Infrastucture.Business.AutoMapper;
+using StudentTable.Infrastucture.Business.DTO;
 using System.Collections.Generic;
+using StudentTable.Infrastucture.Date.Repository.Interface;
 
 namespace StudentTable.Services.Interfaces.Services
 {
     public class UserService : IUserServices
     {
-        //EfUnitOfWork efUnitOfWork = EfUnitOfWork.Instance;
         AutoMap mapper = AutoMap.Instance;
         IUnitOfWork unitOfWork;
 
@@ -21,7 +21,8 @@ namespace StudentTable.Services.Interfaces.Services
         public void CreateUser(UserDto userDto)
         {
             var user = mapper.Mapper.Map<User>(userDto);
-            unitOfWork.UserRepository.Create(user);
+            if (user != null)
+                unitOfWork.UserRepository.Create(user);
         }
 
         public void DeleteUser(int id)

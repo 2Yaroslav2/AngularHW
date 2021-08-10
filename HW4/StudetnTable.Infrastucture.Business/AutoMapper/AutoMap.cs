@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace StudetnTable.Infrastucture.Business.AutoMapper
+namespace StudentTable.Infrastucture.Business.AutoMapper
 {
     public class AutoMap
     {

@@ -1,4 +1,4 @@
-﻿namespace StudetnTable.Domain.Core.Base
+﻿namespace StudentTable.Domain.Core.Base
 {
     public class Role
     {

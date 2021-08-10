@@ -1,6 +1,6 @@
-﻿using StudetnTable.Domain.Core.Entities;
-using StudetnTable.Infrastucture.Date.Database;
-using StudetnTable.Infrastucture.Date.Repository.Base;
+﻿using StudentTable.Domain.Core.Entities;
+using StudentTable.Infrastucture.Date.Database;
+using StudentTable.Infrastucture.Date.Repository.Base;
 using System.Linq;
 
 namespace StudentTable.Infrastucture.Date.Repository

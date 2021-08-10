@@ -4,8 +4,8 @@ import { BehaviorSubject, of } from "rxjs";
 import { environment } from '../../environments/environment';
 import { tap } from 'rxjs/operators';
 import { Router } from "@angular/router";
-// import jwt_decode from 'jwt-decode';
-// import { JwtHelperService } from "@auth0/angular-jwt";
+import jwt_decode from 'jwt-decode';
+import { JwtHelperService } from "@auth0/angular-jwt";
 
 @Injectable()
 export class AuthService {
@@ -13,19 +13,13 @@ export class AuthService {
 
 isUserAuth$ = new BehaviorSubject<boolean>(false);
 
-constructor(private httpClient: HttpClient, private router: Router,) {
+constructor(private httpClient: HttpClient,
+            private router: Router,
+            private jwtHelperService: JwtHelperService) {
   this.isUserAuth$.next(Boolean(localStorage.getItem(this.TOKEN_NAME)));
 }
 
-// constructor(
-//   private httpClient: HttpClient,
-//   private router: Router,
-//   private jwtHelperService: JwtHelperService
-// ) {
-//   this.isUserAuth$.next(Boolean(localStorage.getItem(this.TOKEN_NAME)))
-// }
-//
-//
+
 
 login(login: string, password: string) {
 
@@ -54,13 +48,13 @@ login(login: string, password: string) {
    }))
  }
 
-//
-//  isUserAuth(): boolean {
-//    const token = localStorage.getItem(this.TOKEN_NAME);
-//    if (token && !this.jwtHelperService.isTokenExpired(token)) {
-//      return true;
-//    }
-//    this.logout().subscribe();
-//    return false;
-//  }
+
+ isUserAuth(): boolean {
+   const token = localStorage.getItem(this.TOKEN_NAME);
+   if (token && !this.jwtHelperService.isTokenExpired(token)) {
+     return true;
+   }
+   this.logout().subscribe();
+   return false;
+ }
 }

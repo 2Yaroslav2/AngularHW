@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import {AuthModule} from "./auth/auth.module";
 import {LoginComponent} from "./auth/login/login.component";
 import {AuthInterceptor} from "../shared/interceptors/auth.interceptor";
+import {AuthGuard} from "./auth/auth.guard";
 
 
 
@@ -29,9 +30,9 @@ import {AuthInterceptor} from "../shared/interceptors/auth.interceptor";
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full', canActivate: [AuthGuard] },
       { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'fetch-data', component: FetchDataComponent, canActivate: [AuthGuard] },
       { path: 'login', component: LoginComponent }
     ]),
     AuthModule
@@ -41,7 +42,8 @@ import {AuthInterceptor} from "../shared/interceptors/auth.interceptor";
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true
-    }
+    },
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,7 @@
-﻿using StudetnTable.Domain.Core.Base;
-using static StudetnTable.Domain.Core.Base.Role;
+﻿using StudentTable.Domain.Core.Base;
+using static StudentTable.Domain.Core.Base.Role;
 
-namespace StudetnTable.Domain.Core.Entities
+namespace StudentTable.Domain.Core.Entities
 {
     public class User : BaseEntity<int>
     {

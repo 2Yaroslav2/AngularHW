@@ -4,7 +4,7 @@ using HW4.Models.View.Auth;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using StudentTable.Services.Interfaces.Services;
-using StudetnTable.Domain.Core.Base;
+using StudentTable.Domain.Core.Base;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;

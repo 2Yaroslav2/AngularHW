@@ -9,14 +9,13 @@ import { AuthService } from './auth/auth.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent extends destroySubjectMixin() implements OnDestroy {
-  title = 'app';
 
   constructor(private authService: AuthService) {
 
     super();
-    
+
      of([]).pipe(takeUntil(this.destroy$)).subscribe();
-   
+
   }
   ngOnDestroy() { }
 }

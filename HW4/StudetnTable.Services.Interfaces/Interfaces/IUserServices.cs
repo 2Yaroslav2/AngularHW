@@ -1,4 +1,4 @@
-﻿using StudetnTable.Infrastucture.Business.DTO;
+﻿using StudentTable.Infrastucture.Business.DTO;
 using System.Collections.Generic;
 
 namespace StudentTable.Services.Interfaces.Interfaces

@@ -1,6 +1,6 @@
-﻿using static StudetnTable.Domain.Core.Base.Role;
+﻿using static StudentTable.Domain.Core.Base.Role;
 
-namespace StudetnTable.Infrastucture.Business.DTO
+namespace StudentTable.Infrastucture.Business.DTO
 {
     public class UserDto
     {

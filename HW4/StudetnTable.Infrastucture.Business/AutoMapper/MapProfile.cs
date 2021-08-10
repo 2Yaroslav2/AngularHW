@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using StudetnTable.Domain.Core.Entities;
-using StudetnTable.Infrastucture.Business.DTO;
+using StudentTable.Domain.Core.Entities;
+using StudentTable.Infrastucture.Business.DTO;
 
-namespace StudetnTable.Infrastucture.Business.AutoMapper
+
+namespace StudentTable.Infrastucture.Business.AutoMapper
 {
     public class MapProfile : Profile
     {
@@ -10,6 +11,9 @@ namespace StudetnTable.Infrastucture.Business.AutoMapper
         {
             CreateMap<User, UserDto>();
             CreateMap<UserDto, User>();
+
+            CreateMap<Journal, JournalDto>();
+            CreateMap<JournalDto, Journal>();
         }
     }
 }

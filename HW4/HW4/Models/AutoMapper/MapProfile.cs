@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using HW4.Models.View.Auth;
-using StudetnTable.Infrastucture.Business.DTO;
+using StudentTable.Infrastucture.Business.DTO;
 
 namespace HW4.Models.AutoMapper
 {

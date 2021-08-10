@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StudentTable.Services.Interfaces.Interfaces;
-using StudetnTable.Infrastucture.Business.DTO;
+using StudentTable.Infrastucture.Business.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,8 +23,7 @@ namespace HW4.Controllers
         [HttpGet]
         public IEnumerable<UserDto> Get()
         {
-
-            return userServices.GetAllUsers().ToArray();
+            return userServices.GetAllUsers().Where(user => user.Role != StudentTable.Domain.Core.Base.Role.AuthRole.Admin).ToArray();
         }
     }
 }

@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StudetnTable.Domain.Core.Entities;
+using StudentTable.Domain.Core.Entities;
 
-namespace StudetnTable.Infrastucture.Date.Database
+namespace StudentTable.Infrastucture.Date.Database
 {
     public class StudentTableContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Journal> Journals { get; set; }
         public StudentTableContext(DbContextOptions<StudentTableContext> options) 
             : base(options) 
         {

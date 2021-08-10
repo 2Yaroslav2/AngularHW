@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace StudetnTable.Domain.Interfaces.Interfaces
+namespace StudentTable.Domain.Interfaces.Interfaces
 {
     public interface IRepository<TValue, TKey>
         where TValue : class

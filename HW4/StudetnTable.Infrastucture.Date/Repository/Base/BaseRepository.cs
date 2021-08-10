@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using StudetnTable.Domain.Interfaces.Interfaces;
-using StudetnTable.Infrastucture.Date.Database;
+using StudentTable.Domain.Interfaces.Interfaces;
+using StudentTable.Infrastucture.Date.Database;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace StudetnTable.Infrastucture.Date.Repository.Base
+namespace StudentTable.Infrastucture.Date.Repository.Base
 {
     public abstract class BaseRepository<TValue, TKey> : IRepository<TValue, TKey>
         where TValue : class
