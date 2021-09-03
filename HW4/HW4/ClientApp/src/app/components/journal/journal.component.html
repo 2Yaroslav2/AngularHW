@@ -1,0 +1,34 @@
+<h1 id="tableLabel">Journal</h1>
+
+<ng-template #loading>
+  <p><em>Loading...</em></p>
+</ng-template>
+
+<ng-container *ngIf="journal$ | async; else loading; let journals">
+  <table class='table table-striped' aria-labelledby="tableLabel">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Mark</th>
+      <th>Subject</th>
+      <th>Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let journal of journals;">
+      <app-student [student]="journal"></app-student>
+<!--      <td>{{ journal.name }}</td>-->
+<!--      <td>{{ journal.mark }}</td>-->
+<!--      <td>{{ journal.subject }}</td>-->
+<!--      <td>{{ journal.date }}</td>-->
+    </tr>
+    </tbody>
+  </table>
+</ng-container>
+
+<!--<td>{{ journal.name }}</td>-->
+<!--<td>{{ journal.mark }}</td>-->
+<!--<td>{{ journal.subject }}</td>-->
+<!--<td>{{ journal.date }}</td>-->
+<!--    <app-student *ngFor="let journal of journals"-->
+<!--                 [student]="journal"></app-student>-->

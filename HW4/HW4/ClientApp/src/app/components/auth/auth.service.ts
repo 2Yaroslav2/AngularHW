@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, of } from "rxjs";
-import { environment } from '../../environments/environment';
+import { environment } from '../../../environments/environment';
 import { tap } from 'rxjs/operators';
 import { Router } from "@angular/router";
 import jwt_decode from 'jwt-decode';
@@ -18,7 +18,6 @@ constructor(private httpClient: HttpClient,
             private jwtHelperService: JwtHelperService) {
   this.isUserAuth$.next(Boolean(localStorage.getItem(this.TOKEN_NAME)));
 }
-
 
 
 login(login: string, password: string) {

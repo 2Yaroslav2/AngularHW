@@ -1,0 +1,36 @@
+<h1 style="color: #d4d4d4">Add</h1>
+
+<div>
+  <form [formGroup]="form">
+          <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" placeholder="Enter student name...">
+          </mat-form-field>
+
+<!--    <input matInput formControlName="name" placeholder="Enter student name..." >-->
+
+          <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+            <mat-label>Subject</mat-label>
+            <input matInput formControlName="subject" placeholder="Enter subject...">
+          </mat-form-field>
+
+<!--    <input matInput formControlName="subject" placeholder="Enter subject...">-->
+
+          <mat-form-field hintLabel="Max 100" appearance="fill">
+            <mat-label>Mark</mat-label>
+            <input matInput formControlName="mark" placeholder="Enter mark...">
+          </mat-form-field>
+
+<!--    <input matInput formControlName="mark" placeholder="Enter mark...">-->
+
+          <mat-form-field hintLabel="Max 100" appearance="fill">
+            <mat-label>Mark</mat-label>
+            <input matInput formControlName="date" type="date">
+          </mat-form-field>
+
+<!--    <input matInput formControlName="date" type="date">-->
+
+    <button [disabled]="!form.valid" mat-raised-button color="primary" (click)="onBtnClick()">Save</button>
+  </form>
+</div>
+

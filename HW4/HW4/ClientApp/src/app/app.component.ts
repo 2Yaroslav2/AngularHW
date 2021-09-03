@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { of } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { destroySubjectMixin } from '../shared/mixin/destroy-subject.mixin';
-import { AuthService } from './auth/auth.service';
+import { AuthService } from './components/auth/auth.service';
 
 @Component({
   selector: 'app-root',

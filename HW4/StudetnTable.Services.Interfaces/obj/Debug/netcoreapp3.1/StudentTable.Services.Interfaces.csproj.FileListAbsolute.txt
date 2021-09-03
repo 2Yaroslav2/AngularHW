@@ -16,3 +16,4 @@ D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Services.Interfaces\bin\Debug
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Services.Interfaces\obj\Debug\netcoreapp3.1\StudentTable.Services.Interfaces.csproj.CopyComplete
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Services.Interfaces\obj\Debug\netcoreapp3.1\StudentTable.Services.Interfaces.dll
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Services.Interfaces\obj\Debug\netcoreapp3.1\StudentTable.Services.Interfaces.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Services.Interfaces\obj\Debug\netcoreapp3.1\StudentTable.Services.Interfaces.GeneratedMSBuildEditorConfig.editorconfig

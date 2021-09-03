@@ -12,3 +12,4 @@ D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\bin\Debug\
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Date.csproj.CopyComplete
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Date.dll
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Date.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Date\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Date.GeneratedMSBuildEditorConfig.editorconfig

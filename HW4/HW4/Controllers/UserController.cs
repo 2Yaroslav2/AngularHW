@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StudentTable.Services.Interfaces.Interfaces;
 using StudentTable.Infrastucture.Business.DTO;
-using System;
+using StudentTable.Services.Interfaces.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace HW4.Controllers
 {
@@ -16,7 +14,7 @@ namespace HW4.Controllers
 
         public UserController(IUserServices userServices)
         {
-            this.userServices = userServices; 
+            this.userServices = userServices;
             ;
         }
 

@@ -16,7 +16,7 @@ export class CounterComponent {
   //public users$: Observable<User[]>;
 
   //constructor(http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
-  //  this.users$ = http.get<User[]>(baseUrl + 'user');
+  //  this.users$ = http.get<User[]>(baseUrl + 'student');
   //}
 
 

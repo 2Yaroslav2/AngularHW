@@ -10,3 +10,4 @@ D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\bin\De
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.csproj.CopyComplete
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.dll
 D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.pdb
+D:\ProgrammingHW\Projects Angular\HW4\StudetnTable.Infrastucture.Business\obj\Debug\netcoreapp3.1\StudentTable.Infrastucture.Business.GeneratedMSBuildEditorConfig.editorconfig

@@ -24,7 +24,6 @@ namespace HW4.Controllers
             this.userService = userService;
         }
 
-
         [HttpPost]
         [Route("login")]
         public IActionResult Login(UserViewModel model)

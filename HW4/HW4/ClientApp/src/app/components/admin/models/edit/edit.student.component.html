@@ -1,0 +1,36 @@
+<h1 style="color: #d4d4d4">Edit</h1>
+<!--*ngIf="(student$ | async) as student"-->
+<div>
+  <form [formGroup]="form">
+
+    <input matInput formControlName="id" placeholder="Enter student name..."  hidden>
+
+    <mat-form-field hintLabel="" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" placeholder="Enter student name..." >
+    </mat-form-field>
+
+    <mat-form-field hintLabel="" appearance="fill">
+      <mat-label>Subject</mat-label>
+      <input matInput formControlName="subject" placeholder="Enter subject..." >
+    </mat-form-field>
+
+    <mat-form-field hintLabel="Max 12" appearance="fill">
+      <mat-label>Mark</mat-label>
+      <input matInput formControlName="mark" placeholder="Enter mark..." >
+    </mat-form-field>
+
+    <mat-form-field hintLabel="" appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput formControlName="date" type="date" >
+    </mat-form-field>
+
+    <button [disabled]="!form.valid"  mat-raised-button color="primary" (click)="onBtnClick()">Save</button>
+  </form>
+</div>
+
+<div>
+  <button (click)="onBtnDeleteClick()">Delete</button>
+</div>
+
+

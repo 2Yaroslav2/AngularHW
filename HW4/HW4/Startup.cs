@@ -28,9 +28,8 @@ namespace HW4
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            string connection = Configuration.GetConnectionString("DefaultConnection");
             // Db
+            string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<StudentTableContext>(options => options.UseSqlServer(connection));
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
@@ -71,7 +70,7 @@ namespace HW4
                         };
                     });
 
-            //question
+           
             services.AddTransient<UserService>();
         }
 
@@ -89,6 +88,7 @@ namespace HW4
                 app.UseHsts();
             }
 
+            
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();
